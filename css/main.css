@@ -1,0 +1,56 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-default{
+    border-bottom: thin solid #E94847;
+}
+  
+  h1{
+      font-family: 'Raleway', sans-serif;
+  }
+  
+  .handwritten{
+      font-family: 'Shadows Into Light', cursive;
+      color: #E94847;
+  }
+
+.centerBlock {
+                display: table;
+                margin: 0 auto;
+            }
+            
+.picResize {
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.bottomBordered{
+    border-bottom: thin solid #EBEAE6;
+}
+
+.tall{
+    height: 400px;
+}
+
+.vCenter { 
+    display: flex; 
+    align-items: center; 
+}
+
+.contact{
+    background-color: #E94847;
+    height: 200px;
+}
+
+.white{
+    color:white;
+}
