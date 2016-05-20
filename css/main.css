@@ -10,6 +10,27 @@
       font-family: 'Raleway', sans-serif;
   }
   
+  h2{
+      font-family: 'Raleway', sans-serif;
+      color: #E94847;
+      line-height: 200%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+  }
+ 
+ a{
+     text-decoration: none;
+     color: grey;
+ }
+ 
+ a:hover{
+     text-decoration: none;
+     color: grey;
+ }
+  
   .handwritten{
       font-family: 'Shadows Into Light', cursive;
       color: #E94847;
@@ -25,6 +46,30 @@
     max-height: 280px;
 }
 
+.skillIcon{
+    max-width: 90px;
+    padding-right: 15px;
+}
+
+.pad-left-bottom{
+    padding-left: 2%;
+    padding-bottom: 20px;
+}
+
+.pad-left-right{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.pad-top-bottom{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.skillDescription{
+    float: right;
+}
+
 .blue{
     background-color: blue;
 }
@@ -38,7 +83,11 @@
 }
 
 .tall{
-    height: 400px;
+    height: 600px;
+}
+
+.medium-height{
+    height:400px;
 }
 
 .vCenter { 
@@ -49,8 +98,20 @@
 .contact{
     background-color: #E94847;
     height: 200px;
+    width: 100%;
 }
 
 .white{
-    color:white;
+    color:#F8F7F3;
+}
+
+.greyPattern{
+    background: transparent url(../img/cubes.png);
+    background-attachment: fixed;
+     
+}
+
+.redPattern{
+    background: transparent url(../img/cubes-red.png);
+    background-attachment: fixed;
 }
