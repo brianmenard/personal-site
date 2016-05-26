@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='css/main.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,17 +59,17 @@
         <h2>I'M SKILLED IN</h2>
         <div class='row vCenter'>
           <div class='col-lg-4 center'>
-            <img src='/img/placeholder3.png' class='icon' />
+            <i class="material-icons md-150">code</i>
             <h3>Front End Development</h3>
             <p>I have experience with AngularJS, JavaScript and jQuery, HTML, CSS, and Bootstrap.  Check out my projects blah, blah, and blah. </p>
           </div>
-          <div class='col-lg-4 center'>
-            <img src='/img/placeholder3.png' class='icon' />
+          <div class='col-lg-4 center leftBorder rightBorder'>
+            <i class="material-icons md-150">memory</i>
             <h3>Back End Development</h3>
             <p>I'm also skilled in Ruby, Ruby on Rails, ActiveRecord, Sinatra, and SQL.  Check some of my projects blah, blah, and blah. </p>
           </div>
           <div class='col-lg-4 center'>
-            <img src='/img/placeholder3.png' class='icon' />
+            <i class="material-icons md-150">gesture</i>
             <h3>Design</h3>
             <p>I have a Bachelors degree in Graphic Design, and am skilled with Illustrator, Photoshop, and InDesign.</p>
           </div>
@@ -79,16 +81,16 @@
       <a name="portfolio"></a>
       <h2>MY WORK</h2>
       <div class='center pad-bottom'>
-          <a href="#webWork" class="scroll">Web</a>  |  
-          <a href="#desginWork" class="scroll">Design</a> 
+          <a href="#webWork" class="scroll webAnimation">Web</a>  |  
+          <a href="#desginWork" class="scroll designAnimation">Design</a> 
         </div>
       <div class="container-fluid bottomBordered pad-bottom">
         
-        <div class='row long-row tall'> <!-- CONTAINER FOR LEFT SCROLL -->
+        <div class='row long-row animate'> <!-- CONTAINER FOR LEFT SCROLL -->
         
           <div id="webWork" class="scroll-element"> <!-- WEB WORK START -->
           
-            <!-- PROJECT 1 -->
+            <!-- WEB PROJECT 1 -->
             <div class=' row vCenter'>
               <div class='col-xs-2'></div>
             
@@ -107,9 +109,9 @@
             
               <div class='col-xs-2'></div>
             </div>
-            <!-- END PROJECT 1-->
+            <!-- END WEB PROJECT 1-->
             
-            <!-- PROJECT 2 -->
+            <!-- WEB PROJECT 2 -->
             <div class=' row vCenter'>
               <div class='col-xs-2'></div>
             
@@ -128,13 +130,13 @@
             
               <div class='col-xs-2'></div>
             </div>
-            <!-- END PROJECT 2-->
+            <!-- END WEB PROJECT 2-->
             
           </div> <!-- WEB WORK END -->
             
           <div id="desginWork" class="scroll-element"> <!-- DESIGN WORK START -->
           
-            <!-- PROJECT 1 -->
+            <!-- DESIGN PROJECT 1 -->
             <div class=' row vCenter'>
               <div class='col-xs-2'></div>
             
@@ -153,9 +155,9 @@
             
               <div class='col-xs-2'></div>
             </div>
-            <!-- END PROJECT 1-->
+            <!-- END DESIGN PROJECT 1-->
             
-            <!-- PROJECT 2 -->
+            <!-- DESIGN PROJECT 2 -->
             <div class=' row vCenter'>
               <div class='col-xs-2'></div>
             
@@ -174,7 +176,28 @@
             
               <div class='col-xs-2'></div>
             </div>
-            <!-- END PROJECT 2-->
+            <!-- END DESIGN PROJECT 2-->
+            
+            <!-- DESIGN PROJECT 3 -->
+            <div class=' row vCenter'>
+              <div class='col-xs-2'></div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 center">
+                <a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+              </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 wrapText">
+                <h3>Lorem Ipsum</h3>
+                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                </p>
+              </div>
+            
+              <div class='col-xs-2'></div>
+            </div>
+            <!-- END DESIGN PROJECT 3-->
             
           </div> <!-- DESIGN WORK END -->
         </div> <!-- END CONTAINER FOR LEFT SCROLL-->
@@ -194,25 +217,25 @@
       END BLOG -->
       
       <!-- START CONTACT -->
-      <div class='container-fluid bottomBordered medium-height picBanner'>
+      <div class='container-fluid bottomBordered medium-height'>
         <a name='contact'></a>
         <h2>GET IN TOUCH</h2>
       <div class='row vCenter pad-bottom'>
         <div class='col-lg-2'></div>
-        <div class='col-lg-4'>
-            <p>Hi there, my name is Brian Menard and I'm a Web Developer
-            and Graphic Designer from Boston, but currently living in Chicago.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
+        
+        <div class='col-lg-4 rightBorder'>
+            <a href="mailto:hello@webdevbrian.com?Subject=Hi%20there!" target="_top"><h2 class='black'>hello@webdevbrian.com</h2></a>
         </div>
+        
         <div class='col-lg-4'>
+          <div class='bottomBordered center'><a href='https://github.com/brianmenard'>gitHub</a>  |  <a href='https://www.linkedin.com/in/brianmenard'>LinkedIn</a>  |  <a href='https://webdevbrian.wordpress.com/'>WordPress</a>  </div>
+          
+          <div class='center'>Currently seeking opportunities in the greater Chicago area.</div>
+        </div>
+        
+        <div class='col-lg-2'>
             
         </div>
-        <div class='col-lg-2'></div>
       </div>
       </div>
       <!-- END CONTACT -->
@@ -220,20 +243,20 @@
       <!-- START FOOTER -->
       <div class="container-fluid footer">
       <div class="row pad-left-right pad-top-bottom">
-        <div class="col-xs-3"></div>
+        <div class="col-xs-2"></div>
         
-        <div class="col-xs-3 yellow">
-                    <a class='btn btn-default'>Let's Work Together</a><br>
-          brian@webdevbrian.com
+        <div class="col-xs-3 subtext darkRed">
+          © 2016 Brian Menard, unless otherwise noted.    
         </div>
         
-        <div class="col-xs-3 yellow">
-          TEST
+        <div class="col-xs-4 subtext darkRed">
+          Designed and developed by Brian Menard. Built with BootStrap and SmoothScroll.  
+          Fonts and icons courtesy of Google.
         </div>
         <div class='col-xs-3'></div>
       </div>
       </div>
-      <!-- END CONTACT -->
+      <!-- END FOOTER -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -241,5 +264,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src='js/horizontalScroll.js'></script>
+    <script src='js/resizePortfolio.js'></script>
   </body>
 </html>
