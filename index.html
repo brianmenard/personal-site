@@ -24,14 +24,16 @@
   </head>
   <body>
     <a name="home"></a>
-    <nav class='navbar navbar-default navbar-fixed-top red'>
+    <nav class='navbar navbar-default navbar-fixed-top navbar-custom'>
       <div class="container-fluid centerBlock">
         <ul class="nav navbar-nav">
           <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About</a></li>
-          <li><button href="#contact" type="button" class="btn btn-default navbar-btn">Get in touch</button></li>
+          <!-- <li><a href="#blog">Blog</a></li> -->
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- IF ANY MORE LINKS ARE ADDED, ADD THEM TO SMOOTHSCROLL -->
         </ul>
       </div>
     </nav>
@@ -39,131 +41,185 @@
     <!-- START INTRO -->
     <div class="container-fluid">
       <div class='row tall vCenter bottomBordered'>
-        <div class='col-xs-2'></div>
-        <div class='col-xs-3'>
-            <img src="img/brian-menard.jpg" alt="me" class="img-circle picResize">
-        </div>
-        <div class='col-xs-5'>
-            <h1>My name is Brian Menard and I'm a <span class='handwritten'>full-stack web developer & designer</span> based out of Chicago, IL.</h1>
+        <div class='col-lg-3'></div>
+        <div class='col-lg-6 center'>
+            <h1>My name is Brian Menard and I'm a <p><span class='handwritten'>full-stack web developer & designer</span></p> based out of Chicago, IL.</h1>
             <a class='btn btn-default' href="#portfolio">View my portfolio</a>
         </div>
-        <div class='col-xs-2'></div>
+        <div class='col-lg-3'></div>
       </div>
     </div>
       <!-- END INTRO -->
       
-      <!-- START SKILLS
-      <div class='container-fluid bottomBordered'>
-        <h1>Skills</h1>
+      <!-- START SKILLS -->
+      <a name="skills"></a>
+      <div class='container-fluid bottomBordered pad-bottom'>
+        <h2>I'M SKILLED IN</h2>
         <div class='row vCenter'>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>Ruby</h3>
+          <div class='col-lg-4 center'>
+            <img src='/img/placeholder3.png' class='icon' />
+            <h3>Front End Development</h3>
+            <p>I have experience with AngularJS, JavaScript and jQuery, HTML, CSS, and Bootstrap.  Check out my projects blah, blah, and blah. </p>
           </div>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>Rails</h3>
+          <div class='col-lg-4 center'>
+            <img src='/img/placeholder3.png' class='icon' />
+            <h3>Back End Development</h3>
+            <p>I'm also skilled in Ruby, Ruby on Rails, ActiveRecord, Sinatra, and SQL.  Check some of my projects blah, blah, and blah. </p>
           </div>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>HTML/CSS</h3>
-          </div>
-        </div>
-        <div class='row vCenter'>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>JavaScript</h3>
-          </div>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>jQuery</h3>
-          </div>
-          <div class='col-xs-4 pad-left-bottom vCenter'>
-            <img src="img/placeholder3.png" alt="..." class="img-rounded skillIcon">
-            <h3>AngularJS</h3>
+          <div class='col-lg-4 center'>
+            <img src='/img/placeholder3.png' class='icon' />
+            <h3>Design</h3>
+            <p>I have a Bachelors degree in Graphic Design, and am skilled with Illustrator, Photoshop, and InDesign.</p>
           </div>
         </div>
       </div>
-       END SKILLS -->
+       <!-- END SKILLS -->
       
       <!-- START PORTFOLIO -->
-      <div class="container-fluid">
-        <a name="portfolio"></a>
-        <div class="row bottomBordered pad-left-right">
-          
-          <h2>Portfolio</h2>
-          
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 1" href="//placehold.it/1024x768"><img class="thumbnail img-responsive" src="//placehold.it/600x350"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 8" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/777"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 9" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 10" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/EEE"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 11" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 12" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/DDD"></a></div>
-          <div class="col-lg-4 col-sm-4 col-xs-6"><a title="Image 13" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
+      <a name="portfolio"></a>
+      <h2>MY WORK</h2>
+      <div class='center pad-bottom'>
+          <a href="#webWork" class="scroll">Web</a>  |  
+          <a href="#desginWork" class="scroll">Design</a> 
         </div>
-    </div>
-    <!-- LIGHT BOX OR SOMETHING??
-    <div class="modal" id="myModal" role="dialog">
-      <div class="modal-dialog">
-      <div class="modal-content">
-  	  <div class="modal-header">
-  	  	<button class="close" type="button" data-dismiss="modal">×</button>
-  		  <h3 class="modal-title"></h3>
-  	  </div>
-  	<div class="modal-body">
-  		<div id="modalCarousel" class="carousel">
-            <div class="carousel-inner"></div>
-            <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-          </div>
-  	</div>
-  	<div class="modal-footer">
-  		<button class="btn btn-default" data-dismiss="modal">Close</button>
-  	</div>
-     </div>
-    </div>
-  </div>
-  -->
+      <div class="container-fluid bottomBordered pad-bottom">
+        
+        <div class='row long-row tall'> <!-- CONTAINER FOR LEFT SCROLL -->
+        
+          <div id="webWork" class="scroll-element"> <!-- WEB WORK START -->
+          
+            <!-- PROJECT 1 -->
+            <div class=' row vCenter'>
+              <div class='col-xs-2'></div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 center">
+                <a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+              </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 wrapText">
+                <h3>Lorem Ipsum</h3>
+                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                </p>
+              </div>
+            
+              <div class='col-xs-2'></div>
+            </div>
+            <!-- END PROJECT 1-->
+            
+            <!-- PROJECT 2 -->
+            <div class=' row vCenter'>
+              <div class='col-xs-2'></div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 center">
+                <a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+              </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 wrapText">
+                <h3>Lorem Ipsum</h3>
+                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                </p>
+              </div>
+            
+              <div class='col-xs-2'></div>
+            </div>
+            <!-- END PROJECT 2-->
+            
+          </div> <!-- WEB WORK END -->
+            
+          <div id="desginWork" class="scroll-element"> <!-- DESIGN WORK START -->
+          
+            <!-- PROJECT 1 -->
+            <div class=' row vCenter'>
+              <div class='col-xs-2'></div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 center">
+                <a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+              </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 wrapText">
+                <h3>Lorem Ipsum</h3>
+                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                </p>
+              </div>
+            
+              <div class='col-xs-2'></div>
+            </div>
+            <!-- END PROJECT 1-->
+            
+            <!-- PROJECT 2 -->
+            <div class=' row vCenter'>
+              <div class='col-xs-2'></div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 center">
+                <a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+              </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-4 wrapText">
+                <h3>Lorem Ipsum</h3>
+                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                </p>
+              </div>
+            
+              <div class='col-xs-2'></div>
+            </div>
+            <!-- END PROJECT 2-->
+            
+          </div> <!-- DESIGN WORK END -->
+        </div> <!-- END CONTAINER FOR LEFT SCROLL-->
+        
+        </div> 
+    
       <!-- END PORTFOLIO -->
       
-      <!-- START BLOG -->
-      <div class='container-fluid redPattern'>
+      <!-- START BLOG
+      <div class='container-fluid redPattern bottomBordered'>
         <a name='blog'></a>
         <div class='row medium-height'>
           <h2 class='white'>From the Blog</h2>
-          
+
         </div>
       </div>
-      <!-- END BLOG -->
-      
-      <!-- START ABOUT -->
-      <div class='container-fluid greyPattern'>
-        <a name='about'></a>
-        <h2>About me</h2>
-      <div class='row vCenter bottomBordered pad-top-bottom'>
-        <div class='col-xs-3'></div>
-        <div class='col-xs-3'>
-            <p>Hi there, my name is Brian Menard and I'm a Web Developer
-            and Graphic Designer from Boston, but currently living in Chicago.
-            </p>
-        </div>
-        <div class='col-xs-3'>
-            <img src="img/brian-menard.jpg" alt="me" class="img-circle picResize">
-        </div>
-        <div class='col-xs-3'></div>
-      </div>
-      </div>
-      <!-- END ABOUT -->
+      END BLOG -->
       
       <!-- START CONTACT -->
-      <div class="container-fluid contact">
-      <div class="row pad-left-right pad-top-bottom">
+      <div class='container-fluid bottomBordered medium-height picBanner'>
         <a name='contact'></a>
+        <h2>GET IN TOUCH</h2>
+      <div class='row vCenter pad-bottom'>
+        <div class='col-lg-2'></div>
+        <div class='col-lg-4'>
+            <p>Hi there, my name is Brian Menard and I'm a Web Developer
+            and Graphic Designer from Boston, but currently living in Chicago.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+        </div>
+        <div class='col-lg-4'>
+            
+        </div>
+        <div class='col-lg-2'></div>
+      </div>
+      </div>
+      <!-- END CONTACT -->
+      
+      <!-- START FOOTER -->
+      <div class="container-fluid footer">
+      <div class="row pad-left-right pad-top-bottom">
         <div class="col-xs-3"></div>
         
         <div class="col-xs-3 yellow">
@@ -184,5 +240,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothScroll.js"></script>
+    <script src='js/horizontalScroll.js'></script>
   </body>
 </html>

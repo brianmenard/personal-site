@@ -16,9 +16,18 @@
       line-height: 200%;
       padding-top: 1%;
       padding-bottom: 1%;
-      font-weight: bold;
       font-size: 2em;
       text-align: center;
+  }
+  
+  h3{
+      font-family: 'Raleway', sans-serif;
+  }
+  
+  .subtext{
+      font-family: 'Lato', sans-serif;
+      font-size: .75em;
+      color: grey;
   }
  
  a{
@@ -26,14 +35,23 @@
      color: grey;
  }
  
- a:hover{
+  a:hover{
      text-decoration: none;
      color: grey;
+ }
+ 
+ a:active{
+     text-decoration: none;
+     color: #E94847;
  }
   
   .handwritten{
       font-family: 'Shadows Into Light', cursive;
       color: #E94847;
+  }
+  
+  .navbar-custom{
+      background-color: white;
   }
 
 .centerBlock {
@@ -41,14 +59,23 @@
                 margin: 0 auto;
             }
             
+.vCenter { 
+    display: flex; 
+    align-items: center; 
+}
+
+.center{
+    text-align: center;
+}
+            
 .picResize {
     max-width: 280px;
     max-height: 280px;
 }
 
-.skillIcon{
-    max-width: 90px;
-    padding-right: 15px;
+.icon{
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .pad-left-bottom{
@@ -66,8 +93,8 @@
     padding-bottom: 2%;
 }
 
-.skillDescription{
-    float: right;
+.pad-bottom{
+    padding-bottom: 2%;
 }
 
 .blue{
@@ -79,7 +106,7 @@
 }
 
 .bottomBordered{
-    border-bottom: thin solid #EBEAE6;
+    border-bottom: thin solid #D4D4D4;
 }
 
 .tall{
@@ -90,14 +117,9 @@
     height:400px;
 }
 
-.vCenter { 
-    display: flex; 
-    align-items: center; 
-}
-
-.contact{
+.footer{
     background-color: #E94847;
-    height: 200px;
+    height: 100px;
     width: 100%;
 }
 
@@ -114,4 +136,26 @@
 .redPattern{
     background: transparent url(../img/cubes-red.png);
     background-attachment: fixed;
+}
+
+.picBanner{
+    background-image: url(../img/brian-fade-small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.long-row{
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.scroll-element {
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+}
+
+
+.wrapText{
+    white-space: normal;
 }

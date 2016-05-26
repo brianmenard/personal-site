@@ -1,0 +1,53 @@
+<div class="row pad-left-right vCenter pad-bottom">
+            <div class='col-xs-2'></div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4 center"><a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+              <h3>Lorem Ipsum</h3>
+              <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+            Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+            </p>
+            </div>
+            
+            <div class='col-xs-2'></div>
+          </div>
+          
+          <div class="row pad-left-right vCenter pad-bottom">
+            <div class='col-xs-2'></div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4 center"><a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+              <h3>Lorem Ipsum</h3>
+              <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+            Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+            </p>
+            </div>
+            
+            <div class='col-xs-2'></div>
+          </div>
+          
+          <div class="row pad-left-right vCenter pad-bottom">
+            <div class='col-xs-2'></div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4 center"><a href="#"><img class="img-responsive pad-bottom" src="//placehold.it/600x350"></a>
+            </div>
+            
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+              <h3>Lorem Ipsum</h3>
+              <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
+            Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+            </p>
+            </div>
+            
+            <div class='col-xs-2'></div>
+          </div>
