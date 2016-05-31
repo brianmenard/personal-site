@@ -1,13 +1,19 @@
+
+/* ----- OVERRIDES AND CUSTOMIZATIONS----- */
 *{
     font-family: 'Lato', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .navbar-default{
     border-bottom: thin solid #E94847;
 }
-  
-  h1{
-      font-family: 'Raleway', sans-serif;
+
+h1{
+    font-family: 'Raleway', sans-serif;
   }
   
   h2{
@@ -24,12 +30,6 @@
       font-family: 'Raleway', sans-serif;
   }
   
-  .subtext{
-      font-family: 'Lato', sans-serif;
-      font-size: .75em;
-      color: grey;
-  }
- 
  a{
      text-decoration: none;
      color: grey;
@@ -49,15 +49,50 @@
      text-decoration: none;
      color: grey;
  }
+ 
+  .navbar-custom{
+      background-color: white;
+  }
+  
+  /* ----- END OVERRIDES AND CUSTOMIZATIONS ----- */
+  
+  /* ----- FONT STYLES ----- */
+  
+  .subtext{
+      font-family: 'Lato', sans-serif;
+      font-size: .75em;
+      color: grey;
+  }
   
   .handwritten{
       font-family: 'Shadows Into Light', cursive;
       color: #E94847;
   }
   
-  .navbar-custom{
-      background-color: white;
-  }
+  .white{
+    color:#F8F7F3;
+    }
+
+    .black{
+        color: black;
+    }
+
+    .darkRed{
+        color: #7A2423;
+    }
+    
+    .red{
+        color: #E94847;
+    }
+    
+    .center{
+    text-align: center;
+    }
+  
+  /* ----- END FONT STYLES ----- */
+  
+  /* ----- POSITIONING ----- */
+  
 
 .centerBlock {
                 display: table;
@@ -69,52 +104,19 @@
     align-items: center; 
 }
 
-.center{
-    text-align: center;
-}
-
 .alignTop{
     vertical-align:top;
 }
-            
-.picResize {
-    max-width: 280px;
-    max-height: 280px;
+
+.rightAlign{
+    float: right;
 }
 
-.icon{
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.pad-left-bottom{
-    padding-left: 2%;
-    padding-bottom: 20px;
-}
-
-.pad-left-right{
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.pad-top-bottom{
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.pad-bottom{
-    padding-bottom: 2%;
-}
-
-.blue{
-    background-color: blue;
-}
-
-.yellow{
-    background-color: yellow;
-}
-
-.bottomBordered{
+ /* ----- END POSITIONING ----- */
+ 
+ /* ----- DIV STYLING ----- */
+ 
+ .bottomBordered{
     border-bottom: thin solid #D4D4D4;
 }
 
@@ -131,17 +133,6 @@
     width: 100%;
 }
 
-.white{
-    color:#F8F7F3;
-}
-
-.black{
-    color: black;
-}
-
-.darkRed{
-    color: #7A2423;
-}
 
 .greyPattern{
     background: transparent url(../img/cubes.png);
@@ -165,12 +156,12 @@
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    display: inline-block;
 }
+
 .scroll-element {
-    width: 100%;
     display: inline-block;
     vertical-align: top;
+    width: 100%;
 }
 
 
@@ -187,8 +178,47 @@
 }
 
 .animate{
-    height: 500px;
+    width: 103%;
 }
+ 
+ /* ----- END DIV STYLING ----- */
+ 
+ /* ----- PADDING ----- */
+ 
+.padTop{
+    padding-top: 2%;
+}
+
+.padBottom{
+    padding-bottom: 2%;
+}
+
+.padLeft{
+    padding-left: 2%;
+}
+
+.padRight{
+    padding-right: 2%;
+}
+.padLeft-5{
+    padding-left: 5%;
+
+}
+ 
+ /* ----- END PADDING ----- */
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.resize{
+    max-width: 32px;
+}
+
 
 .material-icons {
   font-family: 'Material Icons';
@@ -221,3 +251,89 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-150 { font-size: 150px; }
+
+/* RESPONSIVE DESIGN FOR PORTFOLIO (NON BOOTSTRAP SECTION)*/
+
+/*
+@media only screen and (min-width:2100px){
+    .animate{height: 1500px; width:2100px;}
+}
+
+@media only screen and (min-width:1700px) and (max-width:2100px){
+    .animate{height: 1500px; width:1700px;}
+}
+*/
+/*
+@media only screen and (min-width:1600px) and (max-width:1700px){
+    .animate{height: 1250px;}
+}
+
+@media only screen and (min-width:1500px) and (max-width:1600px){
+    .animate{height: 1150px;}
+}
+
+@media only screen and (min-width:1300px) and (max-width:1400px){
+    .animate{height: 1000px;}
+}
+
+@media only screen and (min-width:1200px) and (max-width:1300px){
+    .animate{height: 950px;}
+}
+
+@media only screen and (min-width:1100px) and (max-width:1200px){
+    .animate{height: 850px;}
+}
+
+@media only screen and (min-width:1000px) and (max-width:1100px){
+    .animate{height: 800px;}
+}
+
+@media only screen and (min-width:900px) and (max-width:1000px){
+    .animate{height: 800px;}
+}
+
+@media only screen and (min-width:860px) and (max-width:900px){
+    .animate{height: 750px;}
+}
+
+@media only screen and (min-width:800px) and (max-width:860px){
+    .animate{height: 825px;}
+}
+
+@media only screen and (min-width:767px) and (max-width:800px){
+    .animate{height: 850px;}
+}
+
+@media only screen and (min-width:660px) and (max-width:767px){
+    .animate{height: 2000px;}
+}
+
+@media only screen and (min-width:600px) and (max-width:660px){
+    .animate{height: 2100px;}
+}
+
+@media only screen and (min-width:550px) and (max-width:600px){
+    .animate{height: 2000px;}
+}
+
+@media only screen and (min-width:500px) and (max-width:550px){
+    .animate{height: 1900px;}
+}
+
+@media only screen and (min-width:480px) and (max-width:500px){
+    .animate{height: 1800px;}
+}
+
+@media only screen and (min-width:460px) and (max-width:480px){
+    .animate{height: 1700px;}
+}
+
+@media only screen and (max-width:460px){
+    .animate{height: 1500px;}
+}
+*/
+/*Responsive Contact Section*/
+
+@media only screen and (max-width:990px){
+    .contact{height: 275px;}
+}
