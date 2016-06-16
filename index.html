@@ -23,6 +23,8 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:800,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <!-- FeatherLight lightbox -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <a name="home"></a>
@@ -46,14 +48,15 @@
             <li><a href="#portfolio" class="menuLink">Portfolio</a></li>
             <!-- <li><a href="#blog">Blog</a></li> -->
             <!-- <li><a href="#about">About</a></li> -->
-            <li><a href="#contact" class="menuLink hidden-xs">Contact</a></li>
+            <li><a href="#contact" class="menuLink ">Contact</a></li>
             <li><a href="#contact" class="menuLink visible-xs">Contact & Social</a></li>
             <!-- IF ANY MORE LINKS ARE ADDED, ADD THEM TO SMOOTHSCROLL -->
           </ul>
-          <ul class='nav navbar-nav navbar-right  hidden-xs '>
+          <ul class='nav navbar-nav navbar-right   '>
             <li><a href='https://github.com/brianmenard' target="_blank">gitHub</a></li>
             <li><a href='https://www.linkedin.com/in/brianmenard' target="_blank">LinkedIn</a></li>
             <li><a href='https://webdevbrian.wordpress.com/' target="_blank">WordPress</a></li>
+            <li><a href='img/DevDesignResume.pdf' target='blank'>Resume</a></li>
           </ul>
         </div>
       </div>
@@ -78,12 +81,17 @@
           <div class='col-sm-4 center'>
             <i class="material-icons md-150">code</i>
             <h3>Front End Development</h3>
-            <p>I have experience with AngularJS, JavaScript and jQuery, HTML, CSS, and Bootstrap.  Check out my projects blah, blah, and blah. </p>
+            <p>
+              I have experience with AngularJS, JavaScript and jQuery, HTML, CSS, and Bootstrap.
+            </p>
           </div>
           <div class='col-sm-4 center leftBorder rightBorder'>
             <i class="material-icons md-150">memory</i>
             <h3>Back End Development</h3>
-            <p>I'm also skilled in Ruby, Ruby on Rails, ActiveRecord, Sinatra, and SQL.  Check some of my projects blah, blah, and blah. </p>
+            <p>
+              I'm skilled in Ruby, Ruby on Rails, ActiveRecord, Sinatra, and SQL.  I'm also familiar with
+              useful gems such as Devise, OmniAuth, Paperclip, and more.
+            </p>
           </div>
           <div class='col-sm-4 center'>
             <i class="material-icons md-150">gesture</i>
@@ -98,26 +106,28 @@
       <a name="portfolio"></a>
       <h2>MY WORK</h2>
       <div class='center padBottom'>
-          <a href="#webWork" class="scroll webAnimation btn btn-default red">Web</a>  |  
-          <a href="#desginWork" class="scroll designAnimation btn btn-default">Design</a> 
+          <a href="#webWork" class="scroll webAnimation red">Web</a>  |  
+          <a href="#desginWork" class="scroll designAnimation">Design</a> 
       </div>
       <div class="container-fluid bottomBordered padBottom">
         
         <div class='row long-row animate'> <!-- CONTAINER FOR LEFT SCROLL -->
         
           <div id="webWork" class="scroll-element"> <!-- WEB WORK START -->
-          
+          <div class='center padBottom'>
+            View all of my Flatiron coursework on my <a href='https://github.com/brianmenard' target='_blank' class='red'>gitHub</a>
+          </div>
             <!-- WEB PROJECT 1 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
-              <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+              <div class="col-sm-4 center  ">
+                <a href="#"><img class="img-responsive padBottom" src="img/portfolio/js-ttt.png"></a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Javascript Tic Tac Toe</h3>
-                <span class='subtext'>JavaScript, jQuery, HTML (WIP)</span>
+                <h3>Javascript Tic Tac Toe (WIP)</h3>
+                <span class='subtext'>JavaScript, jQuery, HTML</span>
                 <p>
                 Web based Tic-Tac-Toe application with persistence.  Front-end built with Javascript and jQuery, using Rails and ActiveRecord
                 for persistence through internal API calls.
@@ -130,11 +140,11 @@
             <!-- END WEB PROJECT 1-->
             
             <!-- WEB PROJECT 2 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
-              <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+              <div class="col-sm-4 center  ">
+                <a href="#"><img class="img-responsive padBottom" src="img/portfolio/gutenberg.png"></a>
               </div>
             
               <div class="col-sm-4 wrapText">
@@ -152,11 +162,11 @@
             <!-- END WEB PROJECT 2-->
             
             <!-- WEB PROJECT 3 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
-              <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+              <div class="col-sm-4 center  ">
+                <a href="#"><img class="img-responsive padBottom" src="img/portfolio/dujour.png"></a>
               </div>
             
               <div class="col-sm-4 wrapText">
@@ -164,7 +174,7 @@
                 <span class='subtext'>Rails, ActiveRecord, Devise & OmniAuth, Paperclip, BootStrap</span>
                 <p>
                 Recipe management application that allows users to input recipes with photos, and share those
-                recipes with other users.  Built in Rails using Devise and OmniAuth for authentication, and styled
+                recipes with other users.  Built in Rails using Devise and OmniAuth for authentication and styled
                 with Bootstrap.
                 </p>
                 <a href="https://github.com/brianmenard/dujour" target="_blank">GitHub Repo</a>
@@ -175,21 +185,21 @@
             <!-- END WEB PROJECT 3-->
             
             <!-- WEB PROJECT 4 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
-              <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+              <div class="col-sm-4 center ">
+                <a href="#"><img class="img-responsive padBottom" src="img/placeholder3.png"></a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Nile</h3>
-                <span class='subtext'>AngularJS, Rails (WIP)</span>
+                <h3>Seenit (WIP)</h3>
+                <span class='subtext'>AngularJS, Rails</span>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
-                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                Seenit is a Reddit clone built in AngularJS.  It allows users to 
+                submit and manipulate posts, and vote posts up or down.
                 </p>
-                <a href="https://github.com/brianmenard/Nile" target="_blank">GitHub Repo</a>
+                <a href="https://github.com/brianmenard/angular-reddit" target="_blank">GitHub Repo</a>
               </div>
             
               <div class='col-sm-2'></div>
@@ -201,19 +211,23 @@
           <div id="desginWork" class="scroll-element"> <!-- DESIGN WORK START -->
           
             <!-- DESIGN PROJECT 1 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
               <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+                <a href="#" data-featherlight="img/portfolio/gogreen.png">
+                  <img class="img-responsive padBottom" src="img/portfolio/gogreen.png">
+                </a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Design Project 1</h3>
-                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <a href="#" data-featherlight="img/portfolio/gogreen.png">
+                  <h3 class='black'>GoGreen</h3>
+                </a>
+                <span class='subtext'>Logo, Web</span>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
-                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                Logo and web concept for GoGreen, an energy-efficient airport 
+                shuttle service based in New Hampshire. 
                 </p>
               </div>
             
@@ -222,19 +236,25 @@
             <!-- END DESIGN PROJECT 1-->
             
             <!-- DESIGN PROJECT 2 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
               <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+                <a href="#" data-featherlight="img/portfolio/quad-construction.png">
+                  <img class="img-responsive padBottom" src="img/portfolio/quad-construction.png">
+                </a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Design Project 2</h3>
-                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <a href="#" data-featherlight="img/portfolio/quad-construction.png">
+                  <h3 class='black'>Quad Construction</h3>
+                </a>
+                <span class='subtext'>Logo</span>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
-                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                Logo design and sample application of logo.  Quad Construction
+                is a family business, owned and operated by four brothers.  The orange
+                pillars are representative of a construction site, with one pillar
+                leaning to create the Roman numeral IV.
                 </p>
               </div>
             
@@ -243,19 +263,25 @@
             <!-- END DESIGN PROJECT 2-->
             
             <!-- DESIGN PROJECT 3 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
               <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+                <a href="#" data-featherlight="img/portfolio/good-guys.png">
+                  <img class="img-responsive padBottom" src="img/portfolio/good-guys.png">
+                </a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Design Project 3</h3>
-                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <a href="#" data-featherlight="img/portfolio/good-guys.png">
+                  <h3 class='black'>Good Guys</h3>
+                </a>
+                <span class='subtext'>Logo, Packaging</span>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
-                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                Logo design and packaging for local fast food restaurant.  Good Guys
+                focuses on serving 'real' fast food that is organic and locally sourced. 
+                The design is meant to be reminiscent of 50's diners, a time before fast food
+                became overly processed and unhealthy.
                 </p>
               </div>
             
@@ -264,19 +290,26 @@
             <!-- END DESIGN PROJECT 3-->
             
             <!-- DESIGN PROJECT 4 -->
-            <div class='row padLeft-5'>
+            <div class='row padLeft-5 portfolioItem'>
               <div class='col-sm-2'></div>
             
               <div class="col-sm-4 center">
-                <a href="#"><img class="img-responsive padBottom" src="//placehold.it/600x350"></a>
+                <a href="#" data-featherlight="img/portfolio/cauda-pavonis/cauda-pavonis-feature.png">
+                  <img class="img-responsive padBottom" src="img/portfolio/cauda-pavonis/cauda-pavonis-feature.png">
+                </a>
               </div>
             
               <div class="col-sm-4 wrapText">
-                <h3>Design Project 4</h3>
-                <span class='subtext'>Ruby, Angular, HTML, CSS</span>
+                <a href="#" data-featherlight="img/portfolio/cauda-pavonis/cauda-pavonis-feature.png">
+                  <h3 class='black'>Cauda Pavonis</h3>
+                </a>
+                <span class='subtext'>Logo, Packaging</span>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut augue ut convallis.
-                Cras ullamcorper magna a finibus volutpat. Donec commodo ullamcorper felis, ut aliquet nulla malesuada in.
+                'Cauda Pavonis' is a term used in alchemy that represents the phase in which
+                there is a perceptual change in the user.  This face is frequently
+                referred to as the 'peacocks tail', which is evident in the logo design.
+                The packaging also utilizes alchemical symbols to categorize it's products into
+                the four elements of earth, fire, water, and earth.
                 </p>
               </div>
             
@@ -316,7 +349,11 @@
         <div class='col-md-5 padTop padBottom'>
           <div class='bottomBordered center'><a href='https://github.com/brianmenard' target="_blank">gitHub</a>  |  <a href='https://www.linkedin.com/in/brianmenard' target="_blank">LinkedIn</a>  |  <a href='https://webdevbrian.wordpress.com/' target="_blank">WordPress</a>  </div>
           
-          <div class='center'>Currently seeking opportunities in the Chicago area.</div>
+          <div class='center'>
+            Currently seeking opportunities in the Chicago area.
+            <br>
+            <a href='img/DevDesignResume.pdf' target='blank'>Download my resume</a>
+          </div>
         </div>
         
         <div class='col-sm-1'>
@@ -352,6 +389,8 @@
     <script src='js/horizontalScroll.js'></script>
     <script src="js/hideMenu.js"></script>
     <script src="js/buttonUpdater.js"></script>
-    <!-- <script src='js/resizePortfolio.js'></script> TURN ON IF NEED TO RESIZE PORTFOLIO SECTION-->
+    <!-- <script src='js/resizePortfolio.js'></script> -->
+    <!-- Featherlight Lightbox -->
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

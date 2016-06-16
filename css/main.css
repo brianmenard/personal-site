@@ -88,6 +88,14 @@ h1{
     .center{
     text-align: center;
     }
+    
+    .webAnimation{
+        font-size: 1.25em;
+    }
+    
+    .designAnimation{
+        font-size: 1.25em;
+    }
   
   /* ----- END FONT STYLES ----- */
   
@@ -219,6 +227,10 @@ h1{
     max-width: 32px;
 }
 
+.resize-40{
+    max-width: 70%;
+}
+
 
 .material-icons {
   font-family: 'Material Icons';
@@ -336,4 +348,5 @@ h1{
 
 @media only screen and (max-width:990px){
     .contact{height: 275px;}
+    .portfolioItem{padding-bottom: 3%; padding-top: 3%;}
 }
