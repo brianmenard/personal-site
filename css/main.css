@@ -124,6 +124,10 @@ h1{
  
  /* ----- DIV STYLING ----- */
  
+ .grey_border{
+     border:thin solid #d3d3d3;
+ }
+ 
  .bottomBordered{
     border-bottom: thin solid #D4D4D4;
 }
