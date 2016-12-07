@@ -6,6 +6,7 @@
 
 body{
     overflow-x: hidden;
+    font-size: 1.5em;
 }
 
 .navbar-default{
@@ -76,6 +77,10 @@ h1{
     .black{
         color: black;
     }
+    
+    .grey{
+        color: #d3d3d3;
+    }
 
     .darkRed{
         color: #7A2423;
@@ -96,12 +101,20 @@ h1{
     .designAnimation{
         font-size: 1.25em;
     }
+    
+    .material-icons.project_nav{
+        color: #d3d3d3;
+        font-size: 50px;
+    }
+    
+    .flip{
+        transform: rotate(180deg);
+    }
   
   /* ----- END FONT STYLES ----- */
   
   /* ----- POSITIONING ----- */
   
-
 .centerBlock {
                 display: table;
                 margin: 0 auto;
@@ -120,12 +133,26 @@ h1{
     float: right;
 }
 
+.center_image{
+    margin-left: auto;
+    margin-right: auto;
+}
+
  /* ----- END POSITIONING ----- */
  
  /* ----- DIV STYLING ----- */
  
+ .project_header{
+     height: 400px;
+     min-width: 450px;
+ }
+ 
+ .long_screenshot{
+     padding: 10px;
+ }
+ 
  .grey_border{
-     border:thin solid #d3d3d3;
+    border:thin solid #d3d3d3;
  }
  
  .bottomBordered{
@@ -191,6 +218,10 @@ h1{
 
 .animate{
     width: 103%;
+}
+
+.feature_image{
+    padding: 10px;
 }
  
  /* ----- END DIV STYLING ----- */
