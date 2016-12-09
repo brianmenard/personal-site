@@ -1,4 +1,6 @@
 
+/** red:  #E94847  **/
+
 /* ----- OVERRIDES AND CUSTOMIZATIONS----- */
 *{
     font-family: 'Lato', sans-serif;
@@ -49,6 +51,15 @@ h1{
  a:clicked{
      text-decoration: none;
      color: grey;
+ }
+ 
+ .live_link{
+     color: #E94847;
+ }
+ 
+ .live_link:hover{
+     color:#E94847;
+     text-decoration: underline;
  }
  
   .navbar-custom{
@@ -143,8 +154,8 @@ h1{
  /* ----- DIV STYLING ----- */
  
  .project_header{
-     height: 400px;
-     min-width: 450px;
+     margin-top: 75px;
+     padding-bottom: 25px;
  }
  
  .long_screenshot{
