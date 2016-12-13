@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Satisfy" rel="stylesheet">
+
+<!-- Include jQuery Popup Overlay -->
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+<!-- Interactive map -->
+<link href="lg-map/map.css" rel="stylesheet" type="text/css" />
+<script src="lg-map/raphael.js" type="text/javascript"></script>
+<script src="lg-map/scale.raphael.js" type="text/javascript"></script>
+<script src="lg-map/lg-map.js" type="text/javascript"></script>
+
+<!-- Google Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<title>Jai Yen</title>
+</head>
+
+<body>
+	
+<!-- HEADER -->
+<div class='container-fluid'>
+	<div class='nav_container'>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+			<i class="material-icons" style='font-size:50px; color: white;'>menu</i>
+		</span>
+	</div>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#home" onclick="closeNav()">Home</a>
+  		<a href="#about_us" onclick="closeNav()">About Us</a>
+  		<a href="#map_row" onclick="closeNav()">Locations</a>
+  		<a href="#process_row" onclick="closeNav()">Process</a>
+  		<a href="#testimonials_row" onclick="closeNav()">Testimonials</a>
+	</div>
+	<a name='home'></a>
+	<div class='row header'>
+		<div class='logo_container'>
+			<img src='images/logo.png'>
+		</div>
+		<img src='images/sushi1.jpg'>
+	</div>
+
+<!-- END HEADER -->
+
+<!-- GET STARTED -->
+
+<div class='row get_started'>
+	<div class='col-md-2'></div>
+	<div class='col-md-8'>
+		<a name='get_started'></a>
+		<h1 class='start_here_header'>Start Here!</h1>
+	        <p>Fill out the form below and we will be in touch shortly.<br><small>**International opportunities available**</small></p>
+	        <br>
+	        <span id="required_error" style="display:none;" class="required"></span>
+			<form id="jaiyen_inquiry_frm">
+				<table cellpadding="0" cellspacing="0" border="0" class="start_here_form" width="100%">
+					<tr>
+						<td colspan="2" align="center"><div id="login_response_update"></div></td>
+					</tr>
+					<tr>
+						<td width="50%">
+							<input placeholder=" First Name*" type="text" name="name" class="textbox" />
+						</td>
+						<br>
+						<td width="50%">
+							<input placeholder=" Last Name*" type="text" name="last_name" class="textbox" />
+						</td>
+					</tr>
+					<tr>
+						<td width="50%">
+							<input placeholder=" Email Address*" type="text" name="email" class="textbox" />
+						</td>								 
+						<td width="50%">
+							<input placeholder=" Phone Number*" type="text" name="phone" class="textbox" />
+						</td>
+					</tr>
+					<tr>
+						<td width ="50%">
+							<select name="country" class="alt_textbox" onchange="checkCountry(this.value);" onkeyup="checkCountry(this.value);">
+																			<option value="Afghanistan"  >Afghanistan</option>
+																			<option value="Albania"  >Albania</option>
+																			<option value="Algeria"  >Algeria</option>
+																			<option value="American Samoa"  >American Samoa</option>
+																			<option value="Andorra"  >Andorra</option>
+																			<option value="Angola"  >Angola</option>
+																			<option value="Anguilla"  >Anguilla</option>
+																			<option value="Antarctica"  >Antarctica</option>
+																			<option value="Antigua and Barbuda"  >Antigua and Barbuda</option>
+																			<option value="Argentina"  >Argentina</option>
+																			<option value="Armenia"  >Armenia</option>
+																			<option value="Aruba"  >Aruba</option>
+																			<option value="Australia"  >Australia</option>
+																			<option value="Austria"  >Austria</option>
+																			<option value="Azerbaijan"  >Azerbaijan</option>
+																			<option value="Bahamas"  >Bahamas</option>
+																			<option value="Bahrain"  >Bahrain</option>
+																			<option value="Bangladesh"  >Bangladesh</option>
+																			<option value="Barbados"  >Barbados</option>
+																			<option value="Belarus"  >Belarus</option>
+																			<option value="Belgium"  >Belgium</option>
+																			<option value="Belize"  >Belize</option>
+																			<option value="Benin"  >Benin</option>
+																			<option value="Bermuda"  >Bermuda</option>
+																			<option value="Bhutan"  >Bhutan</option>
+																			<option value="Bolivia"  >Bolivia</option>
+																			<option value="Bosnia and Herzegowina"  >Bosnia and Herzegowina</option>
+																			<option value="Botswana"  >Botswana</option>
+																			<option value="Bouvet Island"  >Bouvet Island</option>
+																			<option value="Brazil"  >Brazil</option>
+																			<option value="British Indian Ocean Territory"  >British Indian Ocean Territory</option>
+																			<option value="Brunei Darussalam"  >Brunei Darussalam</option>
+																			<option value="Bulgaria"  >Bulgaria</option>
+																			<option value="Burkina Faso"  >Burkina Faso</option>
+																			<option value="Burundi"  >Burundi</option>
+																			<option value="Cambodia"  >Cambodia</option>
+																			<option value="Cameroon"  >Cameroon</option>
+																			<option value="Canada"  >Canada</option>
+																			<option value="Cape Verde"  >Cape Verde</option>
+																			<option value="Cayman Islands"  >Cayman Islands</option>
+																			<option value="Central African Republic"  >Central African Republic</option>
+																			<option value="Chad"  >Chad</option>
+																			<option value="Chile"  >Chile</option>
+																			<option value="China"  >China</option>
+																			<option value="Christmas Island"  >Christmas Island</option>
+																			<option value="Cocos (Keeling) Islands"  >Cocos (Keeling) Islands</option>
+																			<option value="Colombia"  >Colombia</option>
+																			<option value="Comoros"  >Comoros</option>
+																			<option value="Congo"  >Congo</option>
+																			<option value="Congo, the Democratic Republic of the"  >Congo, the Democratic Republic of the</option>
+																			<option value="Cook Islands"  >Cook Islands</option>
+																			<option value="Costa Rica"  >Costa Rica</option>
+																			<option value="Cote d'Ivoire"  >Cote d'Ivoire</option>
+																			<option value="Croatia (Hrvatska)"  >Croatia (Hrvatska)</option>
+																			<option value="Cuba"  >Cuba</option>
+																			<option value="Cyprus"  >Cyprus</option>
+																			<option value="Czech Republic"  >Czech Republic</option>
+																			<option value="Denmark"  >Denmark</option>
+																			<option value="Djibouti"  >Djibouti</option>
+																			<option value="Dominica"  >Dominica</option>
+																			<option value="Dominican Republic"  >Dominican Republic</option>
+																			<option value="East Timor"  >East Timor</option>
+																			<option value="Ecuador"  >Ecuador</option>
+																			<option value="Egypt"  >Egypt</option>
+																			<option value="El Salvador"  >El Salvador</option>
+																			<option value="Equatorial Guinea"  >Equatorial Guinea</option>
+																			<option value="Eritrea"  >Eritrea</option>
+																			<option value="Estonia"  >Estonia</option>
+																			<option value="Ethiopia"  >Ethiopia</option>
+																			<option value="Falkland Islands (Malvinas)"  >Falkland Islands (Malvinas)</option>
+																			<option value="Faroe Islands"  >Faroe Islands</option>
+																			<option value="Fiji"  >Fiji</option>
+																			<option value="Finland"  >Finland</option>
+																			<option value="France"  >France</option>
+																			<option value="France Metropolitan"  >France Metropolitan</option>
+																			<option value="French Guiana"  >French Guiana</option>
+																			<option value="French Polynesia"  >French Polynesia</option>
+																			<option value="French Southern Territories"  >French Southern Territories</option>
+																			<option value="Gabon"  >Gabon</option>
+																			<option value="Gambia"  >Gambia</option>
+																			<option value="Georgia"  >Georgia</option>
+																			<option value="Germany"  >Germany</option>
+																			<option value="Ghana"  >Ghana</option>
+																			<option value="Gibraltar"  >Gibraltar</option>
+																			<option value="Greece"  >Greece</option>
+																			<option value="Greenland"  >Greenland</option>
+																			<option value="Grenada"  >Grenada</option>
+																			<option value="Guadeloupe"  >Guadeloupe</option>
+																			<option value="Guam"  >Guam</option>
+																			<option value="Guatemala"  >Guatemala</option>
+																			<option value="Guinea"  >Guinea</option>
+																			<option value="Guinea-Bissau"  >Guinea-Bissau</option>
+																			<option value="Guyana"  >Guyana</option>
+																			<option value="Haiti"  >Haiti</option>
+																			<option value="Heard and Mc Donald Islands"  >Heard and Mc Donald Islands</option>
+																			<option value="Holy See (Vatican City State)"  >Holy See (Vatican City State)</option>
+																			<option value="Honduras"  >Honduras</option>
+																			<option value="Hong Kong"  >Hong Kong</option>
+																			<option value="Hungary"  >Hungary</option>
+																			<option value="Iceland"  >Iceland</option>
+																			<option value="India"  >India</option>
+																			<option value="Indonesia"  >Indonesia</option>
+																			<option value="Iran (Islamic Republic of)"  >Iran (Islamic Republic of)</option>
+																			<option value="Iraq"  >Iraq</option>
+																			<option value="Ireland"  >Ireland</option>
+																			<option value="Israel"  >Israel</option>
+																			<option value="Italy"  >Italy</option>
+																			<option value="Jamaica"  >Jamaica</option>
+																			<option value="Japan"  >Japan</option>
+																			<option value="Jordan"  >Jordan</option>
+																			<option value="Kazakhstan"  >Kazakhstan</option>
+																			<option value="Kenya"  >Kenya</option>
+																			<option value="Kiribati"  >Kiribati</option>
+																			<option value="Korea, Democratic People's Republic of"  >Korea, Democratic People's Republic of</option>
+																			<option value="Korea, Republic of"  >Korea, Republic of</option>
+																			<option value="Kuwait"  >Kuwait</option>
+																			<option value="Kyrgyzstan"  >Kyrgyzstan</option>
+																			<option value="Lao, People's Democratic Republic"  >Lao, People's Democratic Republic</option>
+																			<option value="Latvia"  >Latvia</option>
+																			<option value="Lebanon"  >Lebanon</option>
+																			<option value="Lesotho"  >Lesotho</option>
+																			<option value="Liberia"  >Liberia</option>
+																			<option value="Libyan Arab Jamahiriya"  >Libyan Arab Jamahiriya</option>
+																			<option value="Liechtenstein"  >Liechtenstein</option>
+																			<option value="Lithuania"  >Lithuania</option>
+																			<option value="Luxembourg"  >Luxembourg</option>
+																			<option value="Macau"  >Macau</option>
+																			<option value="Macedonia, The Former Yugoslav Republic of"  >Macedonia, The Former Yugoslav Republic of</option>
+																			<option value="Madagascar"  >Madagascar</option>
+																			<option value="Malawi"  >Malawi</option>
+																			<option value="Malaysia"  >Malaysia</option>
+																			<option value="Maldives"  >Maldives</option>
+																			<option value="Mali"  >Mali</option>
+																			<option value="Malta"  >Malta</option>
+																			<option value="Marshall Islands"  >Marshall Islands</option>
+																			<option value="Martinique"  >Martinique</option>
+																			<option value="Mauritania"  >Mauritania</option>
+																			<option value="Mauritius"  >Mauritius</option>
+																			<option value="Mayotte"  >Mayotte</option>
+																			<option value="Mexico"  >Mexico</option>
+																			<option value="Micronesia, Federated States of"  >Micronesia, Federated States of</option>
+																			<option value="Moldova, Republic of"  >Moldova, Republic of</option>
+																			<option value="Monaco"  >Monaco</option>
+																			<option value="Mongolia"  >Mongolia</option>
+																			<option value="Montserrat"  >Montserrat</option>
+																			<option value="Morocco"  >Morocco</option>
+																			<option value="Mozambique"  >Mozambique</option>
+																			<option value="Myanmar"  >Myanmar</option>
+																			<option value="Namibia"  >Namibia</option>
+																			<option value="Nauru"  >Nauru</option>
+																			<option value="Nepal"  >Nepal</option>
+																			<option value="Netherlands"  >Netherlands</option>
+																			<option value="Netherlands Antilles"  >Netherlands Antilles</option>
+																			<option value="New Caledonia"  >New Caledonia</option>
+																			<option value="New Zealand"  >New Zealand</option>
+																			<option value="Nicaragua"  >Nicaragua</option>
+																			<option value="Niger"  >Niger</option>
+																			<option value="Nigeria"  >Nigeria</option>
+																			<option value="Niue"  >Niue</option>
+																			<option value="Norfolk Island"  >Norfolk Island</option>
+																			<option value="Northern Mariana Islands"  >Northern Mariana Islands</option>
+																			<option value="Norway"  >Norway</option>
+																			<option value="Oman"  >Oman</option>
+																			<option value="Pakistan"  >Pakistan</option>
+																			<option value="Palau"  >Palau</option>
+																			<option value="Panama"  >Panama</option>
+																			<option value="Papua New Guinea"  >Papua New Guinea</option>
+																			<option value="Paraguay"  >Paraguay</option>
+																			<option value="Peru"  >Peru</option>
+																			<option value="Philippines"  >Philippines</option>
+																			<option value="Pitcairn"  >Pitcairn</option>
+																			<option value="Poland"  >Poland</option>
+																			<option value="Portugal"  >Portugal</option>
+																			<option value="Puerto Rico"  >Puerto Rico</option>
+																			<option value="Qatar"  >Qatar</option>
+																			<option value="Reunion"  >Reunion</option>
+																			<option value="Romania"  >Romania</option>
+																			<option value="Russian Federation"  >Russian Federation</option>
+																			<option value="Rwanda"  >Rwanda</option>
+																			<option value="Saint Kitts and Nevis"  >Saint Kitts and Nevis</option>
+																			<option value="Saint Lucia"  >Saint Lucia</option>
+																			<option value="Saint Vincent and the Grenadines"  >Saint Vincent and the Grenadines</option>
+																			<option value="Samoa"  >Samoa</option>
+																			<option value="San Marino"  >San Marino</option>
+																			<option value="Sao Tome and Principe"  >Sao Tome and Principe</option>
+																			<option value="Saudi Arabia"  >Saudi Arabia</option>
+																			<option value="Senegal"  >Senegal</option>
+																			<option value="Seychelles"  >Seychelles</option>
+																			<option value="Sierra Leone"  >Sierra Leone</option>
+																			<option value="Singapore"  >Singapore</option>
+																			<option value="Slovakia (Slovak Republic)"  >Slovakia (Slovak Republic)</option>
+																			<option value="Slovenia"  >Slovenia</option>
+																			<option value="Solomon Islands"  >Solomon Islands</option>
+																			<option value="Somalia"  >Somalia</option>
+																			<option value="South Africa"  >South Africa</option>
+																			<option value="South Georgia and the South Sandwich Islands"  >South Georgia and the South Sandwich Islands</option>
+																			<option value="Spain"  >Spain</option>
+																			<option value="Sri Lanka"  >Sri Lanka</option>
+																			<option value="St. Helena"  >St. Helena</option>
+																			<option value="St. Pierre and Miquelon"  >St. Pierre and Miquelon</option>
+																			<option value="Sudan"  >Sudan</option>
+																			<option value="Suriname"  >Suriname</option>
+																			<option value="Svalbard and Jan Mayen Islands"  >Svalbard and Jan Mayen Islands</option>
+																			<option value="Swaziland"  >Swaziland</option>
+																			<option value="Sweden"  >Sweden</option>
+																			<option value="Switzerland"  >Switzerland</option>
+																			<option value="Syrian Arab Republic"  >Syrian Arab Republic</option>
+																			<option value="Taiwan, Province of China"  >Taiwan, Province of China</option>
+																			<option value="Tajikistan"  >Tajikistan</option>
+																			<option value="Tanzania, United Republic of"  >Tanzania, United Republic of</option>
+																			<option value="Thailand"  >Thailand</option>
+																			<option value="Togo"  >Togo</option>
+																			<option value="Tokelau"  >Tokelau</option>
+																			<option value="Tonga"  >Tonga</option>
+																			<option value="Trinidad and Tobago"  >Trinidad and Tobago</option>
+																			<option value="Tunisia"  >Tunisia</option>
+																			<option value="Turkey"  >Turkey</option>
+																			<option value="Turkmenistan"  >Turkmenistan</option>
+																			<option value="Turks and Caicos Islands"  >Turks and Caicos Islands</option>
+																			<option value="Tuvalu"  >Tuvalu</option>
+																			<option value="Uganda"  >Uganda</option>
+																			<option value="Ukraine"  >Ukraine</option>
+																			<option value="United Arab Emirates"  >United Arab Emirates</option>
+																			<option value="United Kingdom"  >United Kingdom</option>
+																			<option value="United States" selected="selected" >United States</option>
+																			<option value="United States Minor Outlying Islands"  >United States Minor Outlying Islands</option>
+																			<option value="Uruguay"  >Uruguay</option>
+																			<option value="Uzbekistan"  >Uzbekistan</option>
+																			<option value="Vanuatu"  >Vanuatu</option>
+																			<option value="Venezuela"  >Venezuela</option>
+																			<option value="Vietnam"  >Vietnam</option>
+																			<option value="Virgin Islands (British)"  >Virgin Islands (British)</option>
+																			<option value="Virgin Islands (U.S.)"  >Virgin Islands (U.S.)</option>
+																			<option value="Wallis and Futuna Islands"  >Wallis and Futuna Islands</option>
+																			<option value="Western Sahara"  >Western Sahara</option>
+																			<option value="Yemen"  >Yemen</option>
+																			<option value="Yugoslavia"  >Yugoslavia</option>
+																			<option value="Zambia"  >Zambia</option>
+																			<option value="Zimbabwe"  >Zimbabwe</option>
+																		</select>
+						</td>
+						<td width ="50%">
+							<input placeholder=" City of Interest*" type="text" name="city" class="textbox" />
+						</td>								
+					</tr>
+					<tr id="state_zip_row">
+						<td width="50%">
+							<select name="state" id="state_dropdown" class="alt_textbox">
+								<option value= "">State*</option> 
+								<option value="AK">AK</option>
+								<option value="AL">AL</option>
+								<option value="AR">AR</option>
+								<option value="AZ">AZ</option>
+								<option value="CA">CA</option>
+								<option value="CO">CO</option>
+								<option value="CT">CT</option>
+								<option value="DC">DC</option>
+								<option value="DE">DE</option>
+								<option value="FL">FL</option>
+								<option value="GA">GA</option>
+								<option value="HI">HI</option>
+								<option value="IA">IA</option>
+								<option value="ID">ID</option>
+								<option value="IL">IL</option>
+								<option value="IN">IN</option>
+								<option value="KS">KS</option>
+								<option value="KY">KY</option>
+								<option value="LA">LA</option>
+								<option value="MA">MA</option>
+								<option value="MD">MD</option>
+								<option value="ME">ME</option>
+								<option value="MI">MI</option>
+								<option value="MN">MN</option>
+								<option value="MO">MO</option>
+								<option value="MS">MS</option>
+								<option value="MT">MT</option>
+								<option value="NC">NC</option>
+								<option value="ND">ND</option>
+								<option value="NE">NE</option>
+								<option value="NH">NH</option>
+								<option value="NJ">NJ</option>
+								<option value="NM">NM</option>
+								<option value="NV">NV</option>
+								<option value="NY">NY</option>
+								<option value="OH">OH</option>
+								<option value="OK">OK</option>
+								<option value="OR">OR</option>
+								<option value="PA">PA</option>
+								<option value="RI">RI</option>
+								<option value="SC">SC</option>
+								<option value="SD">SD</option>
+								<option value="TN">TN</option>
+								<option value="TX">TX</option>
+								<option value="UT">UT</option>
+								<option value="VA">VA</option>
+								<option value="VT">VT</option>
+								<option value="WA">WA</option>
+								<option value="WI">WI</option>
+								<option value="WV">WV</option>
+								<option value="WY">WY</option>
+							</select>
+						</td>
+						<td width="50%">
+							<input placeholder=" Zip*" type="text" name="zip" class="textbox"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<textarea placeholder="Why are you interested in owning a Jai Yen Sushi?" type="text" name="comments" class="textbox" style="height: 90px;" ></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%">
+							<label>Net worth per location you want to open*:</label>
+							<select type="text" name="net_worth" class="textbox" >
+								<option value="" class="selected" selected="selected">Please choose one:</option>
+								<option value="$249,999 or below">$249,999 or below</option> 
+								<option value="$250,000 to $599,999">$250,000 to $599,999</option>
+								<option value="$600,000 or above">$600,000 or above</option>
+							</select>
+						</td>
+						<td width="50%">
+							<label>Liquidity per location you want to open*:</label>
+							<select placeholder="PLEASE CHOOSE ONE*" type="text" name="liquidity" class="textbox" >
+								<option value="" class="selected" selected="selected">Please choose one:</option>
+								<option value="$149,999 or below">$149,999 or below</option> 
+								<option value="$150,000 to $249,999">$150,000 to $249,999</option>
+								<option value="$250,000 or above">$250,000 or above</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="">
+							<label>Do you have a net worth of $600,000 per restaurant you would like to open?* &nbsp;  
+							
+	                        <select placeholder="" type="text" name="personal_net_worth" class="textbox" >
+								<option value="" class="selected" selected="selected">Please choose one:</option>
+								<option value="yes">yes</option> 
+								<option value="no">no</option>
+							</select>
+							</label>
+						</td>
+	                    <td colspan="">
+							<label>Do you have $250,000 in liquid assets per restaurant you would like to open?* &nbsp; 
+	                        <select placeholder="" type="text" name="personal_net_worth" class="textbox" >
+								<option value="" class="selected" selected="selected">Please choose one:</option>
+								<option value="yes">yes</option> 
+								<option value="no">no</option>
+							</select>
+	                        </label>
+							
+						</td>
+					</tr>								
+					<tr>
+						<td align="right" colspan="2">
+							<p class='required'><sup>*</sup>Required field.</p>
+							<input type="button" name="submit" class="submit_form submit_button" value="submit" onclick="#');" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	<div class='col-md-2'></div>
+</div>
+
+<!-- END GET STARTED -->
+
+<!-- ABOUT US -->
+
+<div class='row about_us'>
+	<a name='about_us'></a>
+	<div class='col-md-2'></div>
+	<div class='col-md-8'>
+		<div class='about_us_link_container'>
+		    <a href='#' data-target="#myCarousel" data-slide-to="0" class="active">About Us</a>
+		    <a href='#' data-target="#myCarousel" data-slide-to="1">Our Story</a>
+		    <a href='#' data-target="#myCarousel" data-slide-to="2">Leadership</a>
+	    </div>
+		<br><br><br>
+		<div id="myCarousel" class="carousel slide">
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		    	<h1 class='about_us_header'>Who are we?</h1>
+		    	<br>
+		        <p class="about_us_text">
+		        	Here at Jai Yen we are dedicated to bringing you the 
+		        	freshest and highest quality sushi at a reasonable price 
+		        	(Many people say it's the best price in town!). The restaurant 
+		        	is designed in the "Kaiten (revolving) Sushi" concept which has 
+		        	been made famous all over Japan.
+		        	<br>
+		        	<br>
+		        	If you are a seafood lover, you will soon find out why Jai Yen
+		        	is the restaurant of choice of many hard-core sushi lovers. 
+		        	The freshest of ingredients are delivered every day from all over the world 
+		        	through our special distribution channels. Thanks to all of our customers 
+		        	who collectively consume tons of seafood everyday, we are in a position to 
+		        	stock some rare and scarce ingredients. Sea urchin, fatty tuna, sea bass, 
+		        	flounder, and king crab are just a few examples of our wide variety of choices.
+		    </div>
+		    <div class="item">
+				<h1 class='about_us_header'>Our Story</h1>
+		    	<br>
+		        <img src='images/our_story.png'>
+		    </div>
+		    <div class="item">
+				<h1 class='about_us_header'>Our Leaders</h1>
+		    	<div class='row'>
+		    		<div class='col-xs-3 leadership_container'>
+		    			<img src='images/leader_1.png'>
+		    			<h2 class='leader_header'>Bill Buckley</h2>
+		    			<p class='leader_title'>
+		    				President and CEO
+		    			</p>
+		    			<button class="bill_open btn btn-secondary" href="#bill">Learn More</button>
+		    			<!-- Add content to the popup -->
+						  <div id='bill' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/leader_1.png'>
+					    			<h2 class='leader_header black'>Bill Buckley</h2>
+					    			<p class='leader_title black'>
+					    				President and CEO
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	Our Jai Yen culture is to treat our franchisees the same way we would like for them to treat our Guests; to make every franchisee feel welcomed, respected and heard.”
+										Rich Hicks is the co-founder and visionary behind the franchise fast-casual concept, Jai Yen Sushi.
+									</p>
+									<p>
+										His career in the restaurant business began when he worked as a 
+										dishwasher and bar-back in his home state of Pennsylvania at the young 
+										age of 14. He graduated with a degree in business management from Stephen F. 
+										Austin University in 1992. Upon graduation, he worked as a manager at Brinker 
+										International Restaurant's Romano's Macaroni Grill, eventually holding positions 
+										such as General Manager and the youngest Multi-Area Director, all the while feeling 
+										a budding drive to set his own restaurant ideas into motion.
+								    </p>
+									<br><br><br>
+								    <button class="bill_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+		    		</div>
+		    		<div class='col-xs-3 leadership_container'>
+		    			<img src='images/leader_2.png'>
+		    			<h2 class='leader_header'>Jim Hasaishi</h2>
+		    			<p class='leader_title'>
+		    				Co-Founder
+		    			</p>
+		    			<button class="jim_open btn btn-secondary" href="#jim">Learn More</button>
+		    			<!-- Add content to the popup -->
+						  <div id='jim' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/leader_2.png'>
+					    			<h2 class='leader_header black'>Jim Hisaishi</h2>
+					    			<p class='leader_title black'>
+					    				Co-Founder
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	Our Jai Yen culture is to treat our franchisees the same way we would like for them to treat our Guests; to make every franchisee feel welcomed, respected and heard.”
+										Rich Hicks is the co-founder and visionary behind the franchise fast-casual concept, Jai Yen Sushi.
+									</p>
+									<p>
+										His career in the restaurant business began when he worked as a 
+										dishwasher and bar-back in his home state of Pennsylvania at the young 
+										age of 14. He graduated with a degree in business management from Stephen F. 
+										Austin University in 1992. Upon graduation, he worked as a manager at Brinker 
+										International Restaurant's Romano's Macaroni Grill, eventually holding positions 
+										such as General Manager and the youngest Multi-Area Director, all the while feeling 
+										a budding drive to set his own restaurant ideas into motion.
+								    </p>
+									<br><br><br>
+								    <button class="jim_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+		    		</div>
+		    		<div class='col-xs-3 leadership_container'>
+		    			<img src='images/leader_3.png'>
+		    			<h2 class='leader_header'>Chris Kelly</h2>
+		    			<p class='leader_title'>
+		    				Chief Operating Officer
+		    			</p>
+		    			<button class="chris_open btn btn-secondary" href="#chris">Learn More</button>
+		    			<!-- Add content to the popup -->
+						  <div id='chris' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/leader_3.png'>
+					    			<h2 class='leader_header black'>Chris Kelly</h2>
+					    			<p class='leader_title black'>
+					    				Chief Operation Officer
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	Our Jai Yen culture is to treat our franchisees the same way we would like for them to treat our Guests; to make every franchisee feel welcomed, respected and heard.”
+										Rich Hicks is the co-founder and visionary behind the franchise fast-casual concept, Jai Yen Sushi.
+									</p>
+									<p>
+										His career in the restaurant business began when he worked as a 
+										dishwasher and bar-back in his home state of Pennsylvania at the young 
+										age of 14. He graduated with a degree in business management from Stephen F. 
+										Austin University in 1992. Upon graduation, he worked as a manager at Brinker 
+										International Restaurant's Romano's Macaroni Grill, eventually holding positions 
+										such as General Manager and the youngest Multi-Area Director, all the while feeling 
+										a budding drive to set his own restaurant ideas into motion.
+								    </p>
+									<br><br><br>
+								    <button class="chris_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+						</div>
+		    		<div class='col-xs-3 leadership_container'>
+		    			<img src='images/leader_4.png'>
+		    			<h2 class='leader_header'>Janet Wriggle</h2>
+		    			<p class='leader_title'>
+		    				Chief Financial Officer
+		    			</p>
+		    			<button class="janet_open btn btn-secondary" href="#janet">Learn More</button>
+		    			<!-- Add content to the popup -->
+						  <div id='janet' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/leader_4.png'>
+					    			<h2 class='leader_header black'>Janet Wriggle</h2>
+					    			<p class='leader_title black'>
+					    				Chief Financial Officer
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	Our Jai Yen culture is to treat our franchisees the same way we would like for them to treat our Guests; to make every franchisee feel welcomed, respected and heard.”
+										Rich Hicks is the co-founder and visionary behind the franchise fast-casual concept, Jai Yen Sushi.
+									</p>
+									<p>
+										His career in the restaurant business began when he worked as a 
+										dishwasher and bar-back in his home state of Pennsylvania at the young 
+										age of 14. He graduated with a degree in business management from Stephen F. 
+										Austin University in 1992. Upon graduation, he worked as a manager at Brinker 
+										International Restaurant's Romano's Macaroni Grill, eventually holding positions 
+										such as General Manager and the youngest Multi-Area Director, all the while feeling 
+										a budding drive to set his own restaurant ideas into motion.
+								    </p>
+									<br><br><br>
+								    <button class="janet_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		
+		  <!-- Controls 
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		  -->
+		</div>
+	</div>
+	<div class='col-md-2'></div>
+</div>
+
+<!-- END ABOUT US -->
+
+<!-- QUOTE ROW -->
+
+<div class='row quote_row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6 quote_container'>
+		<h1>
+		“Everybody can sell sushi, but not everybody can sell the same
+		experience we are able to at Jai Yen.”
+		</h1>
+		<h2>- Aaron White, Jai Yen Franchisee</h2>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+
+<!-- END QUOTE ROW -->
+
+<!-- MAP ROW -->
+
+<div class='row map_row'>
+	<a name='map_row'></a>
+	<h1>Market Availability</h1>
+	<div class='col-md-2'></div>
+	<div class='col-md-8'>
+		<div class="lg-map-wrapper" data-map="lg-map/usa.js">
+	  		<div id="lg-map"></div>
+	  		<div class="lg-map-text" id='lg-map-text' style='height:200px;'></div>
+		</div>
+	</div>
+	<div class='col-md-2'></div>
+</div>
+
+<!-- END MAP ROW -->
+
+<!-- PROCESS ROW -->
+
+<div class='row process_row'>
+	<a name='process_row'></a>
+	<h1>Our Process</h1>
+	<div class='col-md-1'></div>
+	<div class='col-md-10'>
+		<img src='images/process.png' class='img-responsive process_image'>
+	</div>
+	<div class='col-md-1'></div>
+</div>
+
+<!-- END PROCESS ROW -->
+
+<!-- TESTIMONIAL ROW -->
+
+<div class='row testimonials_row hidden-xs'>
+	<a name='testimonials_row'></a>
+	<h1>Franchisee Testimonials</h1>
+	<div class='col-md-2'></div>
+	<div class='col-md-4'>
+		<br><br>
+		<p>
+		Our top restaurants just happen to be owned and operated by families. 
+		Brothers. Cousins. Husbands and wives. Fathers and sons. Coincidence? Heck no!
+		</p>
+		<p>
+		There’s something about the Jai Yen experience that’s a perfect fit for 
+		families looking to share something awesome together, whether it’s a meal 
+		at Jai Yen or a thriving multi-unit operation.
+		</p>
+	</div>
+		<div class='col-md-6'>
+			<div class='testimonial_image_1'>
+				<a href="#test1" class='test1_open'><img src='images/testimonial_1.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test1' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_1.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Matt Rusconi & Dave Vorchhiemer
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	While a union between cousins is usually 
+								    	frowned upon, this one gets everyone’ s approval. 
+								    	Matt Rusconi and David Vorchheimer had been franchisees 
+								    	at other concepts before joining together with Jai Yen in 2011.
+									</p>
+									<p>
+										“Jai Yen is a fun brand. It’ s colorful, family...and 
+										community oriented,”stated Rusconi, describing his initial 
+										attraction to Jai Yen. “Also, the risk-reward factor was 
+										appealing because we were able to lock down a lot of territory, 
+										which is an opportunity that only comes with a young brand. 
+										With more mature brands, you have to take what’ s left.”
+								    </p>
+									<br><br><br>
+								    <button class="test1_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+			<div class='testimonial_image_2'>
+				<a href="#test2" class='test2_open'><img src='images/testimonial_2.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test2' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_2.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Loren and Michael Katzman
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	What’ s the secret to a successful marriage? 
+					    				Love. Love for burgers, that is. And it’ s 
+					    				worked for Loren and Michael Katzman. They’ ve 
+					    				been part of the Jai Yen family since the early 
+					    				stages of the company. Having been in the restaurant 
+					    				industry for over 30 years prior to joining Jai Yen, Loren 
+					    				definitely knew what she was doing when she hopped on board.
+									</p>
+									<p>
+										“The concept is so fun and easy, and the quality 
+										of the food is incredible,” Loren explained. “You’ ll never 
+										get bored with Jai Yen because you can always eat something 
+										different. People love that about the brand.”
+								    </p>
+									<br><br><br>
+								    <button class="test2_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+			<div class='testimonial_image_3'>
+				<a href="#test3" class='test3_open'><img src='images/testimonial_3.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test3' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_3.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Kullman Family
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    Brothers Jason and Josh always wanted to inherit 
+								    the family business. Problem was, there was no family 
+								    business. So they joined with their father to invest in one. 
+								    Family patriarch Jeff Kullman explained how one of his sons brought 
+								    Jai Yen Burgers, Fries & Shakes to the family’ s attention.
+									</p>
+									<p>
+										“We were looking at different franchise 
+										concepts, and our oldest son read an article in a
+										trade publication about Jai Yen,” he said. “One of 
+										the things that was important to him was model efficiency, and that’ s what Jai Yen had.”
+								    </p>
+									<br><br><br>
+								    <button class="test3_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+			<div class='testimonial_image_4'>
+				<a href="#test4" class='test4_open'><img src='images/testimonial_4.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test4' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_4.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Kaleb & Khai Duong
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	As brothers, Kaleb and Khai grew up sharing many things – 
+								    	clothes, bedroom, a girlfriend (Oops. Sorry, Khai, if you’ re 
+								    	just now finding that out). And now they share in Jai Yen Sushi.
+									</p>
+									<p>
+										Jai Yen treated the brothers like family from the 
+										beginning, and the brand’ s dedication to its 
+										franchise partners continues today as they purchase 
+										more locations and open more territories in the Louisiana market.
+								    </p>
+									<br><br><br>
+								    <button class="test4_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+			<div class='testimonial_image_5'>
+				<a href="#test5" class='test5_open'><img src='images/testimonial_5.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test5' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_5.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Chuck & Denise Kerr
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	You could say Chuck and Denise Kerr are involved in a love triangle.
+								    	Because along with being married to each other, 
+								    	they’ re both involved with Jai Yen. 
+								    	How did this tasty trio form? Well, after deciding corporate 
+								    	America wasn’ t for him, Chuck was looking for his next move. 
+								    	When his wife called to rave about the food at Jai Yen, he knew 
+								    	they were falling in burger love.
+									</p>
+									<p>
+										The brand has become a family affair for Chuck and Denise, 
+										with their two daughters working at their first location.
+								    </p>
+									<br><br><br>
+								    <button class="test5_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+			<div class='testimonial_image_6'>
+				<a href="#test6" class='test6_open'><img src='images/testimonial_6.png' class='img-responsive'></a>
+			</div>
+			<!-- Add content to the popup -->
+						  <div id='test6' class='popup'>
+						  	<div class='row'>
+						  		<div class='col-md-4'>
+									<img src='images/testimonial_6.png' class='img-responsive'>
+					    			<p class='leader_title black'>
+					    				Frank & Bailey
+					    			</p>
+				    			</div>
+				    			<div class='col-md-8'>
+								    <p>
+								    	Brothers-In-Law Bailey McGuire and Frank Sciuto 
+								    	share an extended family, and part of that family is 
+								    	Jai Yen Sushi. It all started when 
+								    	Sciuto was doing some real estate work for the brand.
+									</p>
+									<p>
+										“I was living in Chicago at the time doing marketing,
+										and we had always bounced ideas off each other about 
+										starting our own business,” McGuire said. “He came to 
+										me with the opportunity. I quit my job in Chicago, moved 
+										back to Texas and we opened our first location.”
+								    </p>
+									<br><br><br>
+								    <button class="test6_close btn btn-secondary">Close</button>
+							    </div>
+							</div>
+						  </div>
+		</div>
+</div>
+
+<!-- END TESTIMONIAL ROW -->
+
+<!-- QUOTE ROW 2 -->
+
+<div class='row quote_row_2'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6 quote_container'>
+		<h1>
+		“You can tell Jai Yen is obsessed with the guest experience by the 
+		contagious attitude that employees have when they walk in the door.”
+		</h1>
+		<h2 style='color:black;'>- Scott Adams, Development Agent</h2>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+
+<!-- END QUOTE ROW 2 -->
+
+<!-- JOIN ROW -->
+
+<div class='row join_row'>
+	<h1>Ready to join the Jai Yen family?</h1>
+	<a href='#get_started'><button type="button" class="btn btn-secondary get_started_button">Get Started</button></a>
+</div>
+
+<!-- END JOIN ROW -->
+
+
+</div><!-- container-fluid -->
+
+<!-- SCRIPT FOR POPUPS -->
+<script src="js/popups.js"></script>
+	
+<!-- END SCRIPT AND STYLING FOR POPUPS -->
+<script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+<!-- SIDENAV SCRIPTS -->
+  <script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+<!-- END SIDENAV SCRIPTS -->
+
+<!-- SMOOTHSCROLL  (not working)
+<script src="js/smoothScroll.js"></script>
+-->
+
+</body>
+</html>
