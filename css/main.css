@@ -254,7 +254,11 @@ h1{
 }
 
 .about_header_row{
-    margin: 100px;
+    padding: 100px;
+}
+
+.about_content_container{
+    padding: 100px;
 }
  
  /* ----- END DIV STYLING ----- */
