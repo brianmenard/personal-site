@@ -254,12 +254,23 @@ h1{
 }
 
 .about_header_row{
-    padding: 100px;
+    padding: 50px;
 }
 
 .about_content_container{
-    padding: 100px;
+    padding: 50px;
     text-align: center;
+    border: red solid thin;
+}
+
+.about_photo_container{
+    border:thin solid red;
+    width: 100vw;
+    margin-left: -50px;
+}
+
+.about_photo_container img{
+    width: 100vw;
 }
  
  /* ----- END DIV STYLING ----- */
