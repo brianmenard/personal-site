@@ -255,22 +255,54 @@ h1{
 
 .about_header_row{
     padding: 50px;
+    border-bottom: thin solid #E94847;
 }
 
 .about_content_container{
-    padding: 50px;
-    text-align: center;
-    border: red solid thin;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.about_content_container h1{
+    color: black;
+}
+
+.about_content_container h2{
+    color:black;
+    text-align: left;
+    padding-left:0px;
+    font-size: 150%;
+    font-style: italic;
 }
 
 .about_photo_container{
-    border:thin solid red;
+    position: relative;
     width: 100vw;
-    margin-left: -50px;
+    height: 95vh;
+    background-image: url('/img/chris-brian-60.jpg');
+    background-size: cover;
 }
 
-.about_photo_container img{
-    width: 100vw;
+.about_photo_container div{
+    color: white;
+    position: absolute;
+    bottom:20%;
+    width: 100%;
+    left:0px;
+    text-align: center;
+}
+
+.about_photo_container div h1{
+    color: white;
+    font-size:350%;
+}
+
+.about_photo_container div h2{
+    color: white;
+    font-size:200%;
+    line-height: 25px;
 }
  
  /* ----- END DIV STYLING ----- */
