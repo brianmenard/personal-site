@@ -346,6 +346,9 @@ h1{
 
 .no_limit_content_container h1{
     color: black;
+    text-align: center;
+    line-height: 150px;
+    font-size: 350%;
 }
 
 .no_limit_content_container p{
