@@ -304,6 +304,35 @@ h1{
     font-size:200%;
     line-height: 25px;
 }
+
+.no_limit_header_container{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-image: url('/img/no_limit_header.jpg');
+    background-size: cover;
+}
+
+.no_limit_header_container div{
+    color: white;
+    position: absolute;
+    bottom:30%;
+    width: 100%;
+    left:200px;
+    text-align: left;
+}
+
+.no_limit_header_container div h1{
+    color: white;
+    font-size:350%;
+}
+
+.no_limit_header_container div h2{
+    color: white;
+    font-size:200%;
+    line-height: 25px;
+    text-align: left;
+}
  
  /* ----- END DIV STYLING ----- */
  
