@@ -317,9 +317,8 @@ h1{
     color: white;
     position: absolute;
     bottom:30%;
-    width: 100%;
+    max-width: 900px;
     left:200px;
-    padding-right: 300px;
     text-align: left;
 }
 
