@@ -214,7 +214,7 @@ body{
     }
 }
 
-@media (min-width: 1000px) and (max-width:1400px) {
+@media (min-width: 1050px) and (max-width:1400px) {
     .main_content {
         height: 600px;
     }
