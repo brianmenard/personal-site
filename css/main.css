@@ -315,10 +315,10 @@ h1{
 
 .no_limit_header_container div{
     color: white;
-    position: absolute;
-    bottom:30%;
+    
+    margin-top:30%;
     max-width: 900px;
-    left:200px;
+    padding-left:15%;
     text-align: left;
 }
 
